@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/gtm-tag-allcheck/',
+  // baseはCLIフラグ --base=/gtm-tag-allcheck/ で指定
   test: {
     globals: true,
     environment: 'jsdom',
