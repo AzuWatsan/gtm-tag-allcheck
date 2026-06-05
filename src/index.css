@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+
+:root {
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --c-bg: #F7F6F3;
+  --c-surface: #FFFFFF;
+  --c-border: #E4E2DC;
+  --c-border-strong: #C8C5BB;
+  --c-text: #1A1917;
+  --c-text-sub: #6B6860;
+  --c-text-muted: #9B9890;
+  --c-warn: #92400E;
+  --c-warn-bg: #FEF3C7;
+  --c-info: #1E40AF;
+  --c-info-bg: #DBEAFE;
+  --c-accent: #1A1917;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--c-bg);
+  color: var(--c-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, select {
+  font-family: var(--font-sans);
+}

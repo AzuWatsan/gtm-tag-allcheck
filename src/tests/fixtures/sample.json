@@ -1,0 +1,51 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-06-05 10:00:00",
+  "containerVersion": {
+    "accountId": "123456",
+    "containerId": "GTM-ABCDEF",
+    "tag": [
+      {
+        "tagId": "1",
+        "name": "GA4_PageView",
+        "type": "gaawe",
+        "firingTriggerId": ["10"],
+        "parameter": [
+          { "type": "template", "key": "measurementId", "value": "{{DLV_MeasurementId}}" }
+        ]
+      },
+      {
+        "tagId": "2",
+        "name": "GAds_CV_Purchase",
+        "type": "adwords_conversion",
+        "paused": true,
+        "firingTriggerId": ["11"],
+        "parameter": [
+          { "type": "template", "key": "label", "value": "{{DLV_ConversionLabel}}" }
+        ]
+      },
+      {
+        "tagId": "3",
+        "name": "コンバージョンタグ_old",
+        "type": "html",
+        "firingTriggerId": ["10"],
+        "blockingTriggerId": ["12"]
+      }
+    ],
+    "trigger": [
+      { "triggerId": "10", "name": "PV_All", "type": "pageview" },
+      { "triggerId": "11", "name": "CV_Purchase", "type": "customEvent" },
+      { "triggerId": "12", "name": "Block_Admin", "type": "pageview" },
+      { "triggerId": "13", "name": "Old_Thanks_Trigger", "type": "pageview" }
+    ],
+    "variable": [
+      { "variableId": "1", "name": "DLV_MeasurementId", "type": "v", "parameter": [] },
+      { "variableId": "2", "name": "DLV_ConversionLabel", "type": "v", "parameter": [] },
+      { "variableId": "3", "name": "Old_Variable_Unused", "type": "v", "parameter": [] }
+    ],
+    "builtInVariable": [
+      { "type": "PAGE_URL", "name": "Page URL" },
+      { "type": "PAGE_PATH", "name": "Page Path" }
+    ]
+  }
+}

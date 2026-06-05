@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/analyzers/index.ts","./src/config/defaultNamingRules.ts","./src/parser/gtmParser.ts","./src/tests/setup.ts","./src/tests/analyzers/parser.test.ts","./src/types/audit.ts","./src/types/gtm.ts"],"errors":true,"version":"6.0.3"}
